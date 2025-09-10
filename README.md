@@ -6,6 +6,10 @@ It demonstrates integration between on-prem Active Directory, Azure AD, and Micr
 ## Architecture Diagram  
 ![Hybrid Microsoft 365 Architecture](hybrid-architechture.png)
 
+## Documentation  
+
+📖 [Hybrid Lab Guide](lab_guide.md) – step-by-step instructions to set up the lab.  
+
 ## What’s Included (Diagrammed)  
 - On-prem Active Directory domain (lab.local) with OUs, groups, and Group Policies.  
 - Azure AD + Microsoft 365 tenant sync via Azure AD Connect.  
