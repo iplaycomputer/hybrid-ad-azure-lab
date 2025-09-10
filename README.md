@@ -30,9 +30,38 @@ To practice:
 - GPO and file share administration.  
 - Application deployment and automation.  
 - Cloud service integration (Office 365 + OneDrive).  
-- Security monitoring and compliance alignment.  
+- Security monitoring and compliance alignment.
 
 ## Next Steps  
 - Expand Terraform to Azure IaaS resources.  
 - Automate Intune app deployment.  
 - Add Splunk/Sentinel SIEM detection queries.  
+
+---
+
+## 📚 Resources  
+
+### Group Policy & PowerShell  
+- [Implement Group Policy Objects – Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/)  
+- [Microsoft PowerShell Learning Paths](https://learn.microsoft.com/en-us/training/paths/powershell/)  
+
+### Active Directory & Identity  
+- [Learn Microsoft Active Directory (AD DS) in 30 mins – Andy Malone (YouTube)](https://www.youtube.com/watch?v=85-bp7XxWDQ)  
+- [How to use IdFix to clean AD objects – LazyAdmin](https://lazyadmin.nl/it/idfix/)  
+
+### DNS & Networking  
+- [Exploring DNS Traffic – ITExamAnswers](https://itexamanswers.net/17-1-7-lab-exploring-dns-traffic-answers.html)  
+
+### SCCM / Endpoint Management  
+- [SCCM Application Deployment Walkthrough – Cobuman (YouTube)](https://www.youtube.com/watch?v=hgp15SXJhQ4)  
+
+### DFS & File Services  
+- [DFS Replication Overview – Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview)  
+
+## 🔧 Troubleshooting Tips  
+
+- **Domain Join Issues** → Verify the PC is joined to the domain and the user has the correct UPN suffix.  
+- **O365 Sync Issues** → Check if the account actually synced in Azure AD / O365. Run **IdFix** or review AD Connect sync logs.  
+- **Mapped Drive Issues** → Confirm the user is in the correct AD group. Verify NTFS and Share permissions match.  
+- **Group Policy Missing** → On the client, run `gpresult /r`. If policies aren’t applying, use `gpupdate /force`.  
+  
