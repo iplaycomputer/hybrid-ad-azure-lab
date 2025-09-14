@@ -1,5 +1,15 @@
 # Hybrid AD / Azure AD / O365 Lab  
 
+![Last Commit](https://img.shields.io/github/last-commit/iplaycomputer/hybrid-ad-azure-lab)
+![Open Issues](https://img.shields.io/github/issues/iplaycomputer/hybrid-ad-azure-lab)
+![Closed Issues](https://img.shields.io/github/issues-closed/iplaycomputer/hybrid-ad-azure-lab)
+![Repo Size](https://img.shields.io/github/repo-size/iplaycomputer/hybrid-ad-azure-lab)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+![Lab Status](https://img.shields.io/badge/lab--status-in_progress-orange)
+
+Languages  
+🇺🇸 English
+
 This repo documents my homelab simulating enterprise-scale identity and systems management.  
 It demonstrates integration between on-prem Active Directory, Azure AD, and Microsoft 365.
   
