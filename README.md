@@ -14,7 +14,7 @@ This repo documents my homelab simulating enterprise-scale identity and systems 
 It demonstrates integration between on-prem Active Directory, Azure AD, and Microsoft 365.
   
 ## Architecture Diagram  
-![Hybrid Microsoft 365 Architecture](hybrid-architechture.png)
+![Hybrid Microsoft 365 Architecture](diagrams/hybrid-architechture.png)
 
 ## Documentation  
 
