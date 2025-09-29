@@ -1,0 +1,17 @@
+{
+  "title": "Hybrid AD & Azure Lab",
+  "pages": [
+    {
+      "title": "Overview",
+      "url": "https://raw.githubusercontent.com/iplaycomputer/hybrid-ad-azure-lab/main/docs/labs/overview.md"
+    },
+    {
+      "title": "Environment & Access",
+      "url": "https://raw.githubusercontent.com/iplaycomputer/hybrid-ad-azure-lab/main/docs/labs/environment.md"
+    },
+    {
+      "title": "Exercise 1: On-Prem AD Setup",
+      "url": "https://raw.githubusercontent.com/iplaycomputer/hybrid-ad-azure-lab/main/docs/labs/ex1-ad-setup.md"
+    }
+  ]
+}
