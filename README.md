@@ -9,6 +9,7 @@
 ![Lab Status](https://img.shields.io/badge/lab--status-in_progress-orange)
 
 ## Table of Contents
+
 1. [Lab Purpose & Audience](#lab-purpose--audience)
 2. [Quick Start](#quick-start)
 3. [Architecture Diagram](#architecture-diagram)
@@ -22,30 +23,41 @@
 
 
 ## Lab Purpose & Audience
-This repo documents a homelab for practicing enterprise-scale identity and systems management. It demonstrates integration between on-prem Active Directory, Azure AD, and Microsoft 365. Intended for IT professionals, students, and anyone interested in hybrid identity and automation. **Not intended as a production-compliant environment.**
 
-Languages: English
+This repo documents a homelab for practicing enterprise-scale identity and systems management. It demonstrates integration between on-prem Active Directory, Azure AD, and Microsoft 365.
+
+
 
 ## Quick Start
-1. Review the [Hybrid Lab Guide](lab_guide.md) for step-by-step setup instructions.
+
+1. Review the Hybrid Lab Guide for step-by-step setup: docs/lab_guide.md
 2. Clone this repo and review the folder structure:
-	- `infra/` – Terraform for cloud resources
-	- `scripts/` – PowerShell setup scripts
-	- `docs/` – Lab guide and documentation
-	- `diagrams/` – Architecture diagrams
+
+- infra/ – Terraform for cloud resources
+- scripts/ – PowerShell setup scripts
+- docs/ – Lab guide and documentation
+- diagrams/ – Architecture diagrams
+
 3. Follow the guide to set up:
-	- Microsoft 365 tenant
-	- Azure AD and on-prem AD
-	- Windows Server and client VMs
-	- File shares, GPOs, and SCCM
+
+- Microsoft 365 tenant
+- Azure AD and on-prem AD
+- Windows Server and client VMs
+- File shares, GPOs, and SCCM
 
 ## Architecture Diagram
-![Hybrid Microsoft 365 Architecture](diagrams/hybrid-architecture.png)
 
 ## Documentation
-📖 [Hybrid Lab Guide](lab_guide.md) – step-by-step instructions to set up the lab.
+
+📖 [Hybrid Lab Guide](docs/lab_guide.md) – step-by-step instructions to set up the lab.
+
+
+- Overview: docs/labs/overview.md
+- Environment & Access: docs/labs/environment.md
+- Exercise 1: On‑Prem AD Setup: docs/labs/ex1-ad-setup.md
 
 ## Features
+
 - On-prem Active Directory domain (lab.local) with OUs, groups, and Group Policies
 - Azure AD + Microsoft 365 tenant sync via Azure AD Connect
 - Windows 10/11 clients joined to the domain
@@ -56,6 +68,7 @@ Languages: English
 - Security overlays: Demonstrates concepts relevant to compliance frameworks (HIPAA, PCI), monitoring/logging, and SIEM (Sentinel/Splunk)
 
 ## Extensions (Planned)
+
 - Terraform (AWS VPC + EC2) for cloud infrastructure automation
 - Ansible for Windows configuration management
 - Expanded Terraform to Azure IaaS resources
@@ -63,7 +76,9 @@ Languages: English
 - Splunk/Sentinel SIEM detection queries
 
 ## Why This Lab?
+
 To practice:
+
 - Hybrid identity management
 - GPO and file share administration
 - Application deployment and automation
@@ -71,32 +86,44 @@ To practice:
 - Security monitoring and compliance alignment
 
 ## Next Steps
+
 - Expand Terraform to Azure IaaS resources
 - Automate Intune app deployment
 - Add Splunk/Sentinel SIEM detection queries
 
 ## Troubleshooting Tips
-- **Domain Join Issues**: Verify the PC is joined to the domain and the user has the correct UPN suffix.
-- **O365 Sync Issues**: Check if the account actually synced in Azure AD / O365. Run **IdFix** or review AD Connect sync logs.
-- **Mapped Drive Issues**: Confirm the user is in the correct AD group. Verify NTFS and Share permissions match.
-- **Group Policy Missing**: On the client, run `gpresult /r`. If policies aren’t applying, use `gpupdate /force`.
+
+- Domain Join Issues: Verify the PC is joined to the domain and the user has the correct UPN suffix.
+- O365 Sync Issues: Check if the account actually synced in Azure AD / O365. Run IdFix or review AD Connect sync logs.
+- Mapped Drive Issues: Confirm the user is in the correct AD group. Verify NTFS and Share permissions match.
+- Group Policy Missing: On the client, run `gpresult /r`. If policies aren’t applying, use `gpupdate /force`.
 
 ## Resources
+
 ### Group Policy & PowerShell
-- [Implement Group Policy Objects – Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/)
-- [Microsoft PowerShell Learning Paths](https://learn.microsoft.com/en-us/training/paths/powershell/)
+
+- Implement Group Policy Objects – Microsoft Learn: [https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/](https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/)
+- Microsoft PowerShell Learning Paths: [https://learn.microsoft.com/en-us/training/paths/powershell/](https://learn.microsoft.com/en-us/training/paths/powershell/)
+  
+  
+  
+  
 
 ### Active Directory & Identity
-- [Learn Microsoft Active Directory (AD DS) in 30 mins – Andy Malone (YouTube)](https://www.youtube.com/watch?v=85-bp7XxWDQ)
-- [How to use IdFix to clean AD objects – LazyAdmin](https://lazyadmin.nl/it/idfix/)
+
+- Learn Microsoft Active Directory (AD DS) in 30 mins – Andy Malone (YouTube): [https://www.youtube.com/watch?v=85-bp7XxWDQ](https://www.youtube.com/watch?v=85-bp7XxWDQ)
+- How to use IdFix to clean AD objects – LazyAdmin: [https://lazyadmin.nl/it/idfix/](https://lazyadmin.nl/it/idfix/)
 
 ### DNS & Networking
-- [Exploring DNS Traffic – ITExamAnswers](https://itexamanswers.net/17-1-7-lab-exploring-dns-traffic-answers.html)
+
+- Exploring DNS Traffic – ITExamAnswers: [https://itexamanswers.net/17-1-7-lab-exploring-dns-traffic-answers.html](https://itexamanswers.net/17-1-7-lab-exploring-dns-traffic-answers.html)
 
 ### SCCM / Endpoint Management
-- [SCCM Application Deployment Walkthrough – Cobuman (YouTube)](https://www.youtube.com/watch?v=hgp15SXJhQ4)
+
+- SCCM Application Deployment Walkthrough – Cobuman (YouTube): [https://www.youtube.com/watch?v=hgp15SXJhQ4](https://www.youtube.com/watch?v=hgp15SXJhQ4)
 
 ### DFS & File Services
-- [DFS Replication Overview – Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview)
+
+- DFS Replication Overview – Microsoft Learn: [https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview](https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview)
 
 
