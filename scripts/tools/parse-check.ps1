@@ -14,7 +14,13 @@ try {
     [void][System.Management.Automation.Language.Parser]::ParseInput($content, [ref]$tokens, [ref]$errors)
 
     if ($errors -and $errors.Count -gt 0) {
-        $errors | ForEach-Object { Write-Error $_.Message }
+        $errors | ForEach-Object {
+            if ($_.Extent) {
+                Write-Error ("Line {0}, Col {1}: {2}" -f $_.Extent.StartLineNumber, $_.Extent.StartColumnNumber, $_.Message)
+            } else {
+                Write-Error $_.Message
+            }
+        }
         exit 1
     } else {
         Write-Host "Parse OK: $Path" -ForegroundColor Green

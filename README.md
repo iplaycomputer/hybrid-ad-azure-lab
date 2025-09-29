@@ -25,7 +25,6 @@
 
 This repo documents a homelab for practicing enterprise-scale identity and systems management. It demonstrates integration between on-prem Active Directory, Azure AD, and Microsoft 365.
 
-
 ## Quick Start
 
 1. Review the Hybrid Lab Guide for step-by-step setup: docs/lab_guide.md
@@ -36,7 +35,7 @@ This repo documents a homelab for practicing enterprise-scale identity and syste
 - docs/ – Lab guide and documentation
 - diagrams/ – Architecture diagrams
 
-3. Follow the guide to set up:
+1. Follow the guide to set up:
 
 - Microsoft 365 tenant
 - Azure AD and on-prem AD
@@ -102,10 +101,6 @@ To practice:
 - Implement Group Policy Objects – Microsoft Learn: [https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/](https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/)
 - Microsoft PowerShell Learning Paths: [https://learn.microsoft.com/en-us/training/paths/powershell/](https://learn.microsoft.com/en-us/training/paths/powershell/)
   
-  
-  
-  
-
 ### Active Directory & Identity
 
 - Learn Microsoft Active Directory (AD DS) in 30 mins – Andy Malone (YouTube): [https://www.youtube.com/watch?v=85-bp7XxWDQ](https://www.youtube.com/watch?v=85-bp7XxWDQ)
@@ -132,5 +127,3 @@ To practice:
 - Back up files to Azure: [https://learn.microsoft.com/azure/backup/backup-overview](https://learn.microsoft.com/azure/backup/backup-overview)
 - Troubleshoot a hybrid VPN connection: [https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-troubleshoot](https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-troubleshoot)
 - Certification – Windows Server Hybrid Administrator Associate: [https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator](https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator)
-
-
