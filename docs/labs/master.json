@@ -12,6 +12,14 @@
     {
       "title": "Exercise 1: On-Prem AD Setup",
       "url": "https://raw.githubusercontent.com/iplaycomputer/hybrid-ad-azure-lab/main/docs/labs/ex1-ad-setup.md"
+    },
+    {
+      "title": "Exercise 2: Azure AD Connect (PHS)",
+      "url": "https://raw.githubusercontent.com/iplaycomputer/hybrid-ad-azure-lab/main/docs/labs/02-azure-ad-connect.md"
+    },
+    {
+      "title": "Exercise 3: Verify Sync & Sign-in",
+      "url": "https://raw.githubusercontent.com/iplaycomputer/hybrid-ad-azure-lab/main/docs/labs/03-verify-sync.md"
     }
   ]
 }

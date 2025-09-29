@@ -1,0 +1,16 @@
+{
+  // Enable all rules by default, then tailor a few for lab docs
+  "default": true,
+
+  // Line length often exceeds 80 in lab instructions; handle via editor wrap
+  "MD013": false,
+
+  // Restrict duplicate heading checks to siblings (common in multi-exercise docs)
+  "MD024": { "siblings_only": true },
+
+  // Prefer 2-space unordered list indentation
+  "MD007": { "indent": 2 },
+
+  // Ordered lists use incremental numbering for readability
+  "MD029": { "style": "ordered" }
+}
