@@ -127,4 +127,3 @@ To practice:
 - [Back up files to Azure](https://learn.microsoft.com/azure/backup/backup-overview)
 - [Troubleshoot a hybrid VPN connection](https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-troubleshoot)
 - [Certification – Windows Server Hybrid Administrator Associate](https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator)
-
