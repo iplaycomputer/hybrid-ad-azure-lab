@@ -30,15 +30,15 @@ This repo documents a homelab for practicing enterprise-scale identity and syste
 
 1. Review the Hybrid Lab Guide: [docs/lab_guide.md](docs/lab_guide.md)
 2. Clone this repo and review the folder structure:
-	- infra/ – Terraform for cloud resources
-	- scripts/ – PowerShell setup scripts
-	- docs/ – Lab guide and documentation
-	- diagrams/ – Architecture diagrams
+   - infra/ – Terraform for cloud resources
+   - scripts/ – PowerShell setup scripts
+   - docs/ – Lab guide and documentation
+   - diagrams/ – Architecture diagrams
 3. Follow the guide to set up:
-	- Microsoft 365 tenant
-	- Azure AD and on-prem AD
-	- Windows Server and client VMs
-	- File shares, GPOs, and SCCM
+   - Microsoft 365 tenant
+   - Azure AD and on-prem AD
+   - Windows Server and client VMs
+   - File shares, GPOs, and SCCM
 
 ## Architecture Diagram
 
@@ -116,6 +116,15 @@ To practice:
 
 ### DFS & File Services
 
-- DFS Replication Overview – Microsoft Learn: [https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview](https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview)
+- [DFS Replication Overview – Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview)
 
+## Further reading (Hybrid architecture)
+
+- [Azure Architecture Center – Hybrid architecture design](https://learn.microsoft.com/azure/architecture/hybrid/)
+- [Extend an on-premises network using VPN](https://learn.microsoft.com/azure/vpn-gateway/design)
+- [Connect to Azure using ExpressRoute](https://learn.microsoft.com/azure/expressroute/expressroute-introduction)
+- [Use Azure file shares](https://learn.microsoft.com/azure/storage/files/storage-files-introduction)
+- [Back up files to Azure](https://learn.microsoft.com/azure/backup/backup-overview)
+- [Troubleshoot a hybrid VPN connection](https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-troubleshoot)
+- [Certification – Windows Server Hybrid Administrator Associate](https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator)
 

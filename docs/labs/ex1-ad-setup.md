@@ -14,8 +14,8 @@ Prereqs:
 Steps:
 
 1. From the repo root, copy the script to the server if needed, then on the server run:
-	- `scripts\new-ad-forest.ps1` (prompts for DSRM password)
-	- Optional: `scripts\sample-setup.ps1` to create OUs, groups, users, and a sample share.
+   - `scripts\new-ad-forest.ps1` (prompts for DSRM password)
+   - Optional: `scripts\sample-setup.ps1` to create OUs, groups, users, and a sample share.
 2. The server will reboot during promotion. Log in as `LAB\\Administrator` (or your domain NETBIOS name).
 
 ## Manual setup (alternative)
