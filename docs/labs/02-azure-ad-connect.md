@@ -28,7 +28,7 @@ Prereqs
 ## Validate initial sync
 
 1. In M365/Azure AD portal, confirm test users appear.
-2. Sign in to `https://portal.office.com` with a test user UPN and verify success.
+2. Sign in to [portal.office.com](https://portal.office.com) with a test user UPN and verify success.
 3. If sign‑in fails, wait a few minutes and re‑try; check sync status in Azure AD Connect Health if available.
 
 ## Troubleshooting
