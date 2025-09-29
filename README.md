@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-file -->
 
 # Hybrid AD / Azure AD / O365 Lab
 
@@ -43,6 +44,8 @@ This repo documents a homelab for practicing enterprise-scale identity and syste
 - File shares, GPOs, and SCCM
 
 ## Architecture Diagram
+
+![Hybrid Architecture](diagrams/hybrid-architecture.png)
 
 ## Documentation
 
