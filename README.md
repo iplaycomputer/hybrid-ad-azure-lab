@@ -21,11 +21,9 @@
 9. [Troubleshooting Tips](#troubleshooting-tips)
 10. [Resources](#resources)
 
-
 ## Lab Purpose & Audience
 
 This repo documents a homelab for practicing enterprise-scale identity and systems management. It demonstrates integration between on-prem Active Directory, Azure AD, and Microsoft 365.
-
 
 
 ## Quick Start
@@ -50,7 +48,6 @@ This repo documents a homelab for practicing enterprise-scale identity and syste
 ## Documentation
 
 📖 [Hybrid Lab Guide](docs/lab_guide.md) – step-by-step instructions to set up the lab.
-
 
 - Overview: docs/labs/overview.md
 - Environment & Access: docs/labs/environment.md
@@ -125,7 +122,6 @@ To practice:
 ### DFS & File Services
 
 - DFS Replication Overview – Microsoft Learn: [https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview](https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview)
-
 
 ## Further reading (Hybrid architecture)
 

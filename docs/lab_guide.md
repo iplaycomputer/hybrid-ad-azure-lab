@@ -257,6 +257,7 @@ After sync:
 
 - [Microsoft Active Directory Documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 - [Azure AD Connect Documentation](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect)
-  - Chrome installs silently (if Required).
+   - Chrome installs silently (if Required).
+
 
 
