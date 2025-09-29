@@ -12,4 +12,4 @@ This page describes the pre-provisioned environment and how to access resources.
 
 - Credentials will be provided by CloudLabs (inject keys)
 - Connect to the VMs via RDP
-- Azure portal: [https://portal.azure.com](https://portal.azure.com)
+- Azure portal: [portal.azure.com](https://portal.azure.com)
