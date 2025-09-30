@@ -9,6 +9,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 ![Lab Status](https://img.shields.io/badge/lab--status-in_progress-orange)
 
+[![markdownlint](https://github.com/iplaycomputer/hybrid-ad-azure-lab/actions/workflows/markdownlint.yml/badge.svg?branch=main)](https://github.com/iplaycomputer/hybrid-ad-azure-lab/actions/workflows/markdownlint.yml)
+[![PR template check](https://github.com/iplaycomputer/hybrid-ad-azure-lab/actions/workflows/pr-template-check.yml/badge.svg?branch=main)](https://github.com/iplaycomputer/hybrid-ad-azure-lab/actions/workflows/pr-template-check.yml)
+
 ## Table of Contents
 
 1. [Lab Purpose & Audience](#lab-purpose--audience)
