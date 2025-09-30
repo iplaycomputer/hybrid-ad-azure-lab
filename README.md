@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-file -->
 
 # Hybrid AD / Azure AD / O365 Lab
 
@@ -27,30 +28,29 @@ This repo documents a homelab for practicing enterprise-scale identity and syste
 
 ## Quick Start
 
-1. Review the Hybrid Lab Guide for step-by-step setup: docs/lab_guide.md
+1. Review the Hybrid Lab Guide: [docs/lab_guide.md](docs/lab_guide.md)
 2. Clone this repo and review the folder structure:
-
-- infra/ – Terraform for cloud resources
-- scripts/ – PowerShell setup scripts
-- docs/ – Lab guide and documentation
-- diagrams/ – Architecture diagrams
-
-1. Follow the guide to set up:
-
-- Microsoft 365 tenant
-- Azure AD and on-prem AD
-- Windows Server and client VMs
-- File shares, GPOs, and SCCM
+   - infra/ – Terraform for cloud resources
+   - scripts/ – PowerShell setup scripts
+   - docs/ – Lab guide and documentation
+   - diagrams/ – Architecture diagrams
+3. Follow the guide to set up:
+   - Microsoft 365 tenant
+   - Azure AD and on-prem AD
+   - Windows Server and client VMs
+   - File shares, GPOs, and SCCM
 
 ## Architecture Diagram
+
+![Hybrid Architecture](diagrams/hybrid-architecture.png)
 
 ## Documentation
 
 📖 [Hybrid Lab Guide](docs/lab_guide.md) – step-by-step instructions to set up the lab.
 
-- Overview: docs/labs/overview.md
-- Environment & Access: docs/labs/environment.md
-- Exercise 1: On‑Prem AD Setup: docs/labs/ex1-ad-setup.md
+- [Overview](docs/labs/overview.md)
+- [Environment & Access](docs/labs/environment.md)
+- [Exercise 1: On‑Prem AD Setup](docs/labs/ex1-ad-setup.md)
 
 ## Features
 
@@ -61,7 +61,7 @@ This repo documents a homelab for practicing enterprise-scale identity and syste
 - Application deployment with SCCM (ConfigMgr)
 - Azure File Sync to OneDrive
 - Office 365 services (Exchange Online, Teams, SharePoint Online) with SSO, MFA, and Conditional Access
-- Security overlays: Demonstrates concepts relevant to compliance frameworks (HIPAA, PCI), monitoring/logging, and SIEM (Sentinel/Splunk)
+- Security overlays: concepts for compliance (HIPAA, PCI), monitoring/logging, and SIEM (Sentinel/Splunk)
 
 ## Extensions (Planned)
 
@@ -98,32 +98,32 @@ To practice:
 
 ### Group Policy & PowerShell
 
-- Implement Group Policy Objects – Microsoft Learn: [https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/](https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/)
-- Microsoft PowerShell Learning Paths: [https://learn.microsoft.com/en-us/training/paths/powershell/](https://learn.microsoft.com/en-us/training/paths/powershell/)
+- [Implement Group Policy Objects – Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/)
+- [Microsoft PowerShell Learning Paths](https://learn.microsoft.com/en-us/training/paths/powershell/)
   
 ### Active Directory & Identity
 
-- Learn Microsoft Active Directory (AD DS) in 30 mins – Andy Malone (YouTube): [https://www.youtube.com/watch?v=85-bp7XxWDQ](https://www.youtube.com/watch?v=85-bp7XxWDQ)
-- How to use IdFix to clean AD objects – LazyAdmin: [https://lazyadmin.nl/it/idfix/](https://lazyadmin.nl/it/idfix/)
+- [Learn Microsoft Active Directory (AD DS) in 30 mins – Andy Malone (YouTube)](https://www.youtube.com/watch?v=85-bp7XxWDQ)
+- [How to use IdFix to clean AD objects – LazyAdmin](https://lazyadmin.nl/it/idfix/)
 
 ### DNS & Networking
 
-- Exploring DNS Traffic – ITExamAnswers: [https://itexamanswers.net/17-1-7-lab-exploring-dns-traffic-answers.html](https://itexamanswers.net/17-1-7-lab-exploring-dns-traffic-answers.html)
+- [Exploring DNS Traffic – ITExamAnswers](https://itexamanswers.net/17-1-7-lab-exploring-dns-traffic-answers.html)
 
 ### SCCM / Endpoint Management
 
-- SCCM Application Deployment Walkthrough – Cobuman (YouTube): [https://www.youtube.com/watch?v=hgp15SXJhQ4](https://www.youtube.com/watch?v=hgp15SXJhQ4)
+- [SCCM Application Deployment Walkthrough – Cobuman (YouTube)](https://www.youtube.com/watch?v=hgp15SXJhQ4)
 
 ### DFS & File Services
 
-- DFS Replication Overview – Microsoft Learn: [https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview](https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview)
+- [DFS Replication Overview – Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/storage/dfs-replication/dfs-replication-overview)
 
 ## Further reading (Hybrid architecture)
 
-- Azure Architecture Center – Hybrid architecture design: [https://learn.microsoft.com/azure/architecture/hybrid/](https://learn.microsoft.com/azure/architecture/hybrid/)
-- Extend an on-premises network using VPN: [https://learn.microsoft.com/azure/vpn-gateway/design](https://learn.microsoft.com/azure/vpn-gateway/design)
-- Connect to Azure using ExpressRoute: [https://learn.microsoft.com/azure/expressroute/expressroute-introduction](https://learn.microsoft.com/azure/expressroute/expressroute-introduction)
-- Use Azure file shares: [https://learn.microsoft.com/azure/storage/files/storage-files-introduction](https://learn.microsoft.com/azure/storage/files/storage-files-introduction)
-- Back up files to Azure: [https://learn.microsoft.com/azure/backup/backup-overview](https://learn.microsoft.com/azure/backup/backup-overview)
-- Troubleshoot a hybrid VPN connection: [https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-troubleshoot](https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-troubleshoot)
-- Certification – Windows Server Hybrid Administrator Associate: [https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator](https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator)
+- [Azure Architecture Center – Hybrid architecture design](https://learn.microsoft.com/azure/architecture/hybrid/)
+- [Extend an on-premises network using VPN](https://learn.microsoft.com/azure/vpn-gateway/design)
+- [Connect to Azure using ExpressRoute](https://learn.microsoft.com/azure/expressroute/expressroute-introduction)
+- [Use Azure file shares](https://learn.microsoft.com/azure/storage/files/storage-files-introduction)
+- [Back up files to Azure](https://learn.microsoft.com/azure/backup/backup-overview)
+- [Troubleshoot a hybrid VPN connection](https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-troubleshoot)
+- [Certification – Windows Server Hybrid Administrator Associate](https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator)

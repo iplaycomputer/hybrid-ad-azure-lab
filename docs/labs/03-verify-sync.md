@@ -21,7 +21,7 @@ Prereqs
 
 ## Test sign-in
 
-1. Browse to [https://portal.office.com](https://portal.office.com)
+1. Browse to [portal.office.com](https://portal.office.com)
 2. Sign in with the test user UPN and password.
 3. Confirm access to the landing page (or see conditional prompts as configured).
 
