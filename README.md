@@ -24,6 +24,7 @@
 8. [Next Steps](#next-steps)
 9. [Troubleshooting Tips](#troubleshooting-tips)
 10. [Resources](#resources)
+11. [Contributing](#contributing)
 
 ## Lab Purpose & Audience
 
@@ -130,3 +131,20 @@ To practice:
 - [Back up files to Azure](https://learn.microsoft.com/azure/backup/backup-overview)
 - [Troubleshoot a hybrid VPN connection](https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-troubleshoot)
 - [Certification – Windows Server Hybrid Administrator Associate](https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator)
+
+## Contributing
+
+Contributions are welcome. This repo enforces pull requests to `main` with required checks.
+
+- Required checks on PRs: markdownlint and “PR template check” must pass.
+- Please follow the PR template: see `.github/pull_request_template.md`.
+- Keep commits focused; the repository enforces a linear history.
+- For PowerShell changes, do a quick syntax check locally:
+
+```powershell
+# Syntax check all scripts
+Get-ChildItem -Path scripts -Filter *.ps1 -Recurse | % { ./scripts/tools/parse-check.ps1 -Path $_.FullName }
+
+# Or check a single file
+./scripts/tools/parse-check.ps1 -Path ./scripts/sample-setup.ps1
+```
