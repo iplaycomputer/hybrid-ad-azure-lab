@@ -1,0 +1,11 @@
+{
+  "name": "hybrid-ad-azure-lab",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"!node_modules\" \"!.git\" \"!.dist\" \"!.build\""
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.18.1"
+  }
+}
