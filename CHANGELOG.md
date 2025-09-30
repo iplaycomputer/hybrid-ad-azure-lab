@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/) and this 
 ### Added
 
 - parse-check.ps1: multi-file and pipeline support; aggregated exit code (PR #7)
+- README: add CI status badges (markdownlint and PR template check) using shields.io style
 
 ### Changed
 
