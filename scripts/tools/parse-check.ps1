@@ -1,33 +1,45 @@
 param(
-    [Parameter(Mandatory = $true)]
-    [string]$Path
+    [Parameter(Mandatory = $true, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Position = 0)]
+    [Alias('FullName')]
+    [string[]]$Path
 )
 
-try {
-    if (-not (Test-Path -LiteralPath $Path)) {
-        throw "File not found: $Path"
-    }
+begin {
+    $globalExit = 0
+}
 
-    $content = Get-Content -LiteralPath $Path -Raw -ErrorAction Stop
-    $tokens = $null
-    $errors = $null
-    [void][System.Management.Automation.Language.Parser]::ParseInput($content, [ref]$tokens, [ref]$errors)
+process {
+    foreach ($p in $Path) {
+        try {
+            if (-not (Test-Path -LiteralPath $p)) {
+                throw "File not found: $p"
+            }
 
-    if ($errors -and $errors.Count -gt 0) {
-        $errors | ForEach-Object {
-            if ($_.Extent) {
-                Write-Error ("Line {0}, Col {1}: {2}" -f $_.Extent.StartLineNumber, $_.Extent.StartColumnNumber, $_.Message)
+            $content = Get-Content -LiteralPath $p -Raw -ErrorAction Stop
+            $tokens = $null
+            $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseInput($content, [ref]$tokens, [ref]$errors)
+
+            if ($errors -and $errors.Count -gt 0) {
+                $errors | ForEach-Object {
+                    if ($_.Extent) {
+                        Write-Error ("$p -> Line {0}, Col {1}: {2}" -f $_.Extent.StartLineNumber, $_.Extent.StartColumnNumber, $_.Message)
+                    } else {
+                        Write-Error "$p -> $($_.Message)"
+                    }
+                }
+                $globalExit = 1
             } else {
-                Write-Error $_.Message
+                Write-Host "Parse OK: $p" -ForegroundColor Green
             }
         }
-        exit 1
-    } else {
-        Write-Host "Parse OK: $Path" -ForegroundColor Green
-        exit 0
+        catch {
+            Write-Error $_
+            $globalExit = 1
+        }
     }
 }
-catch {
-    Write-Error $_
-    exit 1
+
+end {
+    exit $globalExit
 }
