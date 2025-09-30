@@ -53,14 +53,6 @@ Add images or transcript snippets if helpful for reviewers.
 - If scripts changed, run the relevant Verification steps in the lab(s) and confirm expected outcomes.
 - Confirm CI markdownlint status is green.
 
-## CloudLabs reviewer checklist (if labs changed)
-
-- [ ] `docs/labs/master.json` ordering matches intended flow; new/removed pages reflected.
-- [ ] Each page referenced in `master.json` exists and loads in CloudLabs.
-- [ ] Anchors used in the PR description (e.g., `#validation`, `#validate-initial-sync`, `#test-sign-in`) exist.
-- [ ] No inline secrets/placeholders are leaked; use tokens (e.g., `{{ResourceGroupName}}`) when needed.
-- [ ] Links are relative within the repo; no absolute raw GitHub links unless required by CloudLabs ingestion.
-
 ## Backout plan
 
 - Revert this PR. No persistent cloud-side changes are made unless scripts are explicitly executed by the user.
