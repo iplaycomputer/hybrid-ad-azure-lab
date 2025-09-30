@@ -1,5 +1,5 @@
 param(
-    [Parameter(Mandatory = $true, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Position = 0)]
+    [Parameter(ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Position = 0)]
     [Alias('FullName')]
     [string[]]$Path
 )
@@ -9,6 +9,9 @@ begin {
 }
 
 process {
+    if (-not $Path -or $Path.Count -eq 0) {
+        return
+    }
     foreach ($p in $Path) {
         try {
             if (-not (Test-Path -LiteralPath $p)) {
