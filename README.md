@@ -134,7 +134,7 @@ To practice:
 
 ## Contributing
 
-Contributions are welcome. This repo enforces pull requests to `main` with required checks.
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for details. This repo enforces pull requests to `main` with required checks.
 
 - Required checks on PRs: markdownlint and “PR template check” must pass.
 - Please follow the PR template: see `.github/pull_request_template.md`.
