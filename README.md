@@ -143,7 +143,7 @@ Contributions are welcome. This repo enforces pull requests to `main` with requi
 
 ```powershell
 # Syntax check all scripts
-Get-ChildItem -Path scripts -Filter *.ps1 -Recurse | % { ./scripts/tools/parse-check.ps1 -Path $_.FullName }
+Get-ChildItem -Path scripts -Filter *.ps1 -Recurse | ForEach-Object { ./scripts/tools/parse-check.ps1 -Path $_.FullName }
 
 # Or check a single file
 ./scripts/tools/parse-check.ps1 -Path ./scripts/sample-setup.ps1
