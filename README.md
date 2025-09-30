@@ -100,7 +100,7 @@ To practice:
 
 - [Implement Group Policy Objects – Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/implement-group-policy-objects/)
 - [Microsoft PowerShell Learning Paths](https://learn.microsoft.com/en-us/training/paths/powershell/)
-
+  
 ### Active Directory & Identity
 
 - [Learn Microsoft Active Directory (AD DS) in 30 mins – Andy Malone (YouTube)](https://www.youtube.com/watch?v=85-bp7XxWDQ)
