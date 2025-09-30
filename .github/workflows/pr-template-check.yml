@@ -1,0 +1,42 @@
+name: pr-template-check
+
+on:
+  pull_request:
+    branches: [ main ]
+    types: [opened, edited, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  validate:
+    name: Validate PR body matches template
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check required sections
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          echo "Validating PR body..."
+          required=(
+            "# Summary"
+            "## Changes"
+            "## Labs affected (if any)"
+            "## Testing & validation"
+            "## Checklist"
+            "## How to verify (for reviewers)"
+            "## Backout plan"
+          )
+          missing=()
+          for h in "${required[@]}"; do
+            if ! grep -Fq "$h" <<< "$PR_BODY"; then
+              missing+=("$h")
+            fi
+          done
+          if [ ${#missing[@]} -gt 0 ]; then
+            echo "Missing required sections:" >&2
+            for m in "${missing[@]}"; do echo "- $m" >&2; done
+            exit 1
+          fi
+          echo "All required sections present."

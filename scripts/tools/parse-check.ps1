@@ -47,7 +47,7 @@ process {
 
 end {
     if (-not $hadInput) {
-        Write-Error "No input files provided. Pass -Path or pipe files (e.g., Get-ChildItem -Recurse -Filter *.ps1 | .\\scripts\\tools\\parse-check.ps1)."
+    Write-Error "No input files provided. Pass -Path or pipe files (e.g., Get-ChildItem -Recurse -Filter *.ps1 | ./scripts/tools/parse-check.ps1)."
         $globalExit = 1
     }
     exit $globalExit
